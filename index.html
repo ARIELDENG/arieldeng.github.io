@@ -6,123 +6,144 @@
   <title>Ariel (Ken Deng)</title>
   <meta name="keywords" content="Ken Deng, Ariel, Kwaipilot, Kuaishou, AI4SE, Agentic Coding, LLM" />
   <meta name="description" content="Personal homepage of Ariel (Ken Deng) — Algorithm Expert at Kuaishou Technology" />
-  <!-- If you have jemdoc.css, keep this; otherwise you can remove it and use the inline styles below. -->
-  <link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
   <style>
-    /* Lightweight fallback styles (used if jemdoc.css is absent) */
-    body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:#111;margin:0;background:#fff}
-    #layout-content{max-width:980px;margin:32px auto;padding:0 20px}
-    h1{font-size:2rem;margin:0 0 .5rem}
-    h2{margin:2rem 0 0.75rem}
-    h3{margin:0.5rem 0}
-    a{color:#0b69c7;text-decoration:none}
-    a:hover{text-decoration:underline}
-    table{width:100%;border-collapse:collapse}
-    td{vertical-align:top}
-    .avatar{border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
-    .icons img{height:28px;vertical-align:middle}
-    ul{padding-left:1.2rem}
-    .muted{color:#666}
-    .pub li{margin-bottom:10px}
-    .tag{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:.1rem .6rem;font-size:.85rem;margin-right:.25rem;color:#333}
-    footer{margin:2rem 0;text-align:center;color:#666}
-  </style>
-  <script>
-    function showPubs(id){
-      if(id===0){
-        document.getElementById('pubs').innerHTML=document.getElementById('pubs_selected').innerHTML;
-        document.getElementById('select0').style='text-decoration:underline;color:#000000';
-        document.getElementById('select1').style='';
-      }else{
-        document.getElementById('pubs').innerHTML=document.getElementById('pubs_by_topic').innerHTML;
-        document.getElementById('select1').style='text-decoration:underline;color:#000000';
-        document.getElementById('select0').style='';
-      }
+    :root{
+      --bg:#0b0c10;--card:#111316;--ink:#e9eef3;--muted:#aab3bd;--pri:#4da3ff;--accent:#9b8cff;
+      --maxw:1100px
     }
-    document.addEventListener('DOMContentLoaded',()=>showPubs(0));
-  </script>
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,#0b0c10 0%,#111316 100%);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--pri);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:32px}
+    .grid{display:grid;grid-template-columns:320px 1fr;gap:28px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+    /* left profile card */
+    .card{background:linear-gradient(180deg,#12151a 0%,#0f1216 100%);border:1px solid #1a1f26;border-radius:20px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+    .profile{padding:22px;position:sticky;top:22px}
+    .avatar{width:100%;aspect-ratio:1/1;border-radius:18px;object-fit:cover;border:1px solid #212833;box-shadow:0 10px 40px rgba(0,0,0,.45)}
+    .name{font-weight:800;font-size:1.75rem;margin:16px 0 8px}
+    .title{color:var(--muted);margin:0 0 14px}
+    .kv{display:grid;grid-template-columns:84px 1fr;gap:4px;color:var(--muted);font-size:.95rem}
+    .kv b{color:var(--ink);font-weight:600}
+    .icons{display:flex;gap:10px;margin-top:14px}
+    .icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:#151a21;border:1px solid #232a35}
+    .icon svg{width:18px;height:18px}
+    /* right content */
+    .content{display:grid;gap:22px}
+    section{padding:22px 22px;background:linear-gradient(180deg,#12151a 0%,#0f1216 100%);border:1px solid #1a1f26;border-radius:20px}
+    h2{font-size:1.25rem;margin:0 0 12px}
+    .pill{display:inline-block;border:1px solid #243042;border-radius:999px;padding:.2rem .6rem;color:#c6d3e1;font-size:.85rem;margin-right:.3rem}
+    .bio{color:#d9e3ee}
+    /* pubs */
+    .pub{display:flex;flex-direction:column;gap:16px}
+    .pub-item{padding:14px 16px;border:1px dashed #263141;border-radius:14px;background:#12151a}
+    .pub-title{font-weight:650}
+    .pub-meta{color:var(--muted);font-size:.95rem}
+    .links a{margin-right:10px}
+    .year-badge{float:right;background:#1a2330;border:1px solid #273346;border-radius:10px;padding:2px 8px;color:#cfe1ff;font-size:.8rem}
+    footer{color:#8e97a3;text-align:center;padding:26px 0}
+  </style>
 </head>
 <body>
-  <div id="layout-content" style="margin-top:25px">
-    <table>
-      <tbody>
-        <tr>
-          <td width="75%">
-            <div id="toptitle">
-              <h1>Ariel (Ken Deng) 邓肯</h1>
+  <main class="wrap">
+    <div class="grid">
+      <!-- LEFT: profile -->
+      <aside class="card profile">
+        <img class="avatar" src="assets/imgs/me.jpg" alt="Ariel (Ken Deng)"/>
+        <div class="name">Ariel (Ken Deng) 邓肯</div>
+        <div class="title">Algorithm Expert · Kuaishou Technology</div>
+        <div class="kv"><div>Email</div><div><a href="mailto:13011807272@163.com">13011807272@163.com</a></div></div>
+        <div class="kv"><div>Focus</div><div><span class="pill">LLM</span><span class="pill">AI4SE</span><span class="pill">Agentic&nbsp;Coding</span></div></div>
+        <div class="icons">
+          <a class="icon" href="https://scholar.google.com/citations?hl=en&user=8GQEIQcAAAAJ" title="Google Scholar" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17" stroke-width="1.5"/><path d="M23 9l-3.5-2L12 13" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </aside>
+
+      <!-- RIGHT: content -->
+      <div class="content">
+        <section>
+          <h2>Biography</h2>
+          <p class="bio">I received my B.E. (2019) and M.E. (2022) from Beijing University of Posts and Telecommunications. From 2022–2024, I led algorithms for <em>Aone Copilot</em> at Alibaba and helped build an in‑house Code LLM. I am currently an Algorithm Expert at Kuaishou Technology, focusing on Kwaipilot and research at the intersection of LLM, AI4SE, and agentic coding.</p>
+        </section>
+
+        <section>
+          <h2>Publications <span class="year-badge" id="pubCount">Loading…</span></h2>
+          <div class="pub" id="pubList">
+            <!-- Fallback representative items shown until pubs.json is found -->
+            <div class="pub-item">
+              <div class="pub-title">KAT‑V1: Kwai‑AutoThink Technical Report</div>
+              <div class="pub-meta">Z. Zhan, <b>Ken Deng</b>, H. Tang, W. Xiang, K. Wu, W. Li, W. Zhu, J. Xu, L. Huang, Z. Feng, S. Wang, S. Yan, J. Liu, Z. Peng, Z. Gao, H. Huang, Z. Zhan, Y. Wu, Y. Zhang, J. Yang, G. Chen, H. Zhang, B. Chen, B. Yu · <i>arXiv</i>, 2025</div>
+              <div class="links"><a href="https://arxiv.org/abs/2507.08297">abs</a> <a href="https://huggingface.co/Kwaipilot/KAT-V1-40B">code/model</a></div>
             </div>
-            <h3>Algorithm Expert</h3>
-            <p>
-              Kuaishou Technology<br/>
-              <br/>
-              Email: <a href="mailto:13011807272@163.com">13011807272@163.com</a>
-            </p>
-            <p class="icons">
-              <!-- Add more icons as needed -->
-              <a href="https://scholar.google.com/citations?hl=en&user=8GQEIQcAAAAJ" aria-label="Google Scholar"><img src="assets/logos/google_logo.png" alt="Google Scholar"/></a>
-            </p>
-          </td>
-          <td width="25%">
-            <img class="avatar" src="assets/imgs/me.jpg" alt="Ariel (Ken Deng) photo" width="100%"/>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            <div class="pub-item">
+              <div class="pub-title">MTU‑Bench: A Multi‑granularity Tool‑Use Benchmark for Large Language Models</div>
+              <div class="pub-meta">P. Wang, Y. Wu, N. Wang, J. Liu, X. Song, Z.Y. Peng, <b>Ken Deng</b>, C. Zhang, J. Wang, J. Peng, G. Zhang, H. Guo, Z. Zhang, W. Su, B. Zheng · ICLR 2025 (Poster)</div>
+              <div class="links"><a href="https://openreview.net/profile?id=~Ken_Deng1">OpenReview</a></div>
+            </div>
+            <div class="pub-item">
+              <div class="pub-title">M2rc‑Eval: Massively Multilingual Repository‑level Code Completion Evaluation</div>
+              <div class="pub-meta">J. Liu, <b>Ken Deng</b>, C. Liu, J. Yang, S. Liu, H. Zhu, P. Zhao, L. Chai, Y. Wu, G. Zhang, N. Wang, JinKe, B. Xiang, G. Zhang, W. Su, B. Zheng · ICLR 2025 (under review)</div>
+              <div class="links"><a href="https://openreview.net/profile?id=~Ken_Deng1">OpenReview</a></div>
+            </div>
+            <div class="pub-item">
+              <div class="pub-title">DDK: Distilling Domain Knowledge for Efficient Large Language Models</div>
+              <div class="pub-meta">J. Liu, C. Zhang, J. Guo, Y. Zhang, H. Que, <b>Ken Deng</b>, Z. Bai, J. Liu, G. Zhang, J. Wang, Y. Wu, C. Liu, J. Wang, L. Qu, W. Su, B. Zheng · <i>NeurIPS</i>, 2024 (Poster)</div>
+              <div class="links"><a href="https://openreview.net/profile?id=~Ken_Deng1">OpenReview</a></div>
+            </div>
+            <div class="pub-item">
+              <div class="pub-title">A limited‑view CT reconstruction framework based on hybrid domains and spatial correlation</div>
+              <div class="pub-meta">K. Deng, C. Sun, W. Gong, Y. Liu, H. Yang · <i>Sensors</i>, 2022</div>
+              <div class="links"></div>
+            </div>
+          </div>
+          <div class="muted" style="margin-top:8px">Full list: <a href="https://scholar.google.com/citations?hl=en&user=8GQEIQcAAAAJ">Google Scholar</a></div>
+        </section>
 
-    <h2>Biography</h2>
-    <p>
-      I received my B.E. (2019) and M.E. (2022) from Beijing University of Posts and Telecommunications. From 2022–2024, I served as the algorithm lead for <em>Aone Copilot</em> at Alibaba, where I helped develop an in-house Code LLM. I am currently an Algorithm Expert at Kuaishou Technology, focusing on Kwaipilot and research at the intersection of <span class="tag">LLM</span><span class="tag">AI4SE</span><span class="tag">Agentic&nbsp;Coding</span>.
-    </p>
+        <section>
+          <h2>Contact</h2>
+          <div class="bio">Open to research/engineering collaboration on LLMs for code, agentic systems, and scalable RL training.</div>
+        </section>
 
-    <h2>Publications
-      <small class="muted">(Representative; full list on <a href="https://scholar.google.com/citations?hl=en&user=8GQEIQcAAAAJ">Google Scholar</a>)</small>
-    </h2>
+        <footer>© <span id="year"></span> Ariel (Ken Deng)</footer>
+      </div>
+    </div>
+  </main>
 
-    <div id="pubs"></div>
-
-    <!-- By year (default) -->
-    <script id="pubs_selected" type="text/template">
-      <ul class="pub">
-        <li>
-          <b>KAT-V1: Kwai-AutoThink Technical Report</b><br/>
-          Zizheng Zhan, <b>Ken Deng</b>, Huaixi Tang, Wen Xiang, Kun Wu, Weihao Li, Wenqiang Zhu, Jingxuan Xu, Lecheng Huang, Zongxian Feng, Shaojie Wang, Shangpeng Yan, Jiaheng Liu, Zhongyuan Peng, Zuchen Gao, Haoyang Huang, Ziqi Zhan, Yanan Wu, Yuanxing Zhang, Jian Yang, Guang Chen, Haotian Zhang, Bin Chen, Bing Yu<br/>
-          <i>arXiv</i>, 2025. [<a href="https://arxiv.org/abs/2507.08297">abs</a>] [<a href="https://huggingface.co/Kwaipilot/KAT-V1-40B">code/model</a>]
-        </li>
-        <li>
-          <b>MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models</b><br/>
-          Pei Wang, Yanan Wu, Noah Wang, Jiaheng Liu, Xiaoshuai Song, Z.Y. Peng, <b>Ken Deng</b>, Chenchen Zhang, Jiakai Wang, Junran Peng, Ge Zhang, Hangyu Guo, Zhaoxiang Zhang, Wenbo Su, Bo Zheng<br/>
-          <i>ICLR</i>, 2025 (Poster). [<a href="https://openreview.net/profile?id=~Ken_Deng1">OpenReview</a>]
-        </li>
-        <li>
-          <b>M2rc-Eval: Massively Multilingual Repository-level Code Completion Evaluation</b><br/>
-          Jiaheng Liu, <b>Ken Deng</b>, Congnan Liu, Jian Yang, Shukai Liu, He Zhu, Peng Zhao, Linzheng Chai, Yanan Wu, Ge Zhang, Noah Wang, JinKe, Bangyu Xiang, Guoan Zhang, Wenbo Su, Bo Zheng<br/>
-          ICLR 2025 (under review). [<a href="https://openreview.net/profile?id=~Ken_Deng1">OpenReview</a>]
-        </li>
-        <li>
-          <b>DDK: Distilling Domain Knowledge for Efficient Large Language Models</b><br/>
-          Jiaheng Liu, Chenchen Zhang, Jinyang Guo, Yuanxing Zhang, Haoran Que, <b>Ken Deng</b>, Zhiqi Bai, Jie Liu, Ge Zhang, Jiakai Wang, Yanan Wu, Congnan Liu, Jiamang Wang, Lin Qu, Wenbo Su, Bo Zheng<br/>
-          <i>NeurIPS</i>, 2024 (Poster). [<a href="https://openreview.net/profile?id=~Ken_Deng1">OpenReview</a>]
-        </li>
-      </ul>
-    </script>
-
-    <!-- By topic (optional placeholder) -->
-    <script id="pubs_by_topic" type="text/template">
-      <h3>LLMs & Coding</h3>
-      <ul class="pub">
-        <li>KAT-V1: Kwai-AutoThink Technical Report — arXiv 2025.</li>
-        <li>MTU-Bench — ICLR 2025 Poster.</li>
-        <li>M2rc-Eval — ICLR 2025 (under review).</li>
-        <li>DDK — NeurIPS 2024 Poster.</li>
-      </ul>
-    </script>
-
-    <footer>
-      © <span id="year"></span> Ariel (Ken Deng)
-    </footer>
-  </div>
   <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
+    /* Optional: auto-load a complete publications list from assets/pubs.json if present.
+       Format: [{title, authors, venue, year, links:{pdf, arxiv, code, project}}]
+    */
+    (async function(){
+      try{
+        const resp = await fetch('assets/pubs.json', {cache:'no-store'});
+        if(!resp.ok) throw new Error('no pubs.json');
+        const data = await resp.json();
+        const list = document.getElementById('pubList');
+        list.innerHTML = '';
+        data.forEach(p=>{
+          const li = document.createElement('div');
+          li.className = 'pub-item';
+          li.innerHTML = `
+            <div class="pub-title">${p.title}</div>
+            <div class="pub-meta">${p.authors} · ${p.venue?`<i>${p.venue}</i>`:''}${p.year?`, ${p.year}`:''}</div>
+            <div class="links">
+              ${p.links?.pdf?`<a href="${p.links.pdf}">pdf</a>`:''}
+              ${p.links?.arxiv?`<a href="${p.links.arxiv}">arXiv</a>`:''}
+              ${p.links?.code?`<a href="${p.links.code}">code</a>`:''}
+              ${p.links?.project?`<a href="${p.links.project}">project</a>`:''}
+            </div>`;
+          list.appendChild(li);
+        });
+        document.getElementById('pubCount').textContent = data.length + ' pubs';
+      }catch(e){
+        const count = document.querySelectorAll('#pubList .pub-item').length;
+        document.getElementById('pubCount').textContent = count + ' pubs';
+      }
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
   </script>
 </body>
 </html>

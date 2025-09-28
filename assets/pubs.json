@@ -38,8 +38,8 @@
   {
     "title": "M2rc-eval: Massively multilingual repository-level code completion evaluation",
     "authors": "Jiaheng Liu, Ken Deng, Congnan Liu, Jian Yang, Shukai Liu, He Zhu, Peng Zhao, Linzheng Chai, Yanan Wu, Ke Jin, et al.",
-    "venue": "arXiv",
-    "year": 2024,
+    "venue": "ACL",
+    "year": 2025,
     "links": {
       "arxiv": "https://arxiv.org/abs/2410.21157"
     }
@@ -47,8 +47,8 @@
   {
     "title": "MTU-Bench: A multi-granularity tool-use benchmark for large language models",
     "authors": "Pei Wang, Yanan Wu, Zekun Wang, Jiaheng Liu, Xiaoshuai Song, Zhongyuan Peng, Ken Deng, Chenchen Zhang, Jiakai Wang, Junran Peng, et al.",
-    "venue": "arXiv",
-    "year": 2024,
+    "venue": "ICLR",
+    "year": 2025,
     "links": {
       "arxiv": "https://arxiv.org/abs/2410.11710"
     }
@@ -67,36 +67,6 @@
     "authors": "Jiaheng Liu, Chenchen Zhang, Jinyang Guo, Yuanxing Zhang, Haoran Que, Ken Deng, Jie Liu, Ge Zhang, Yanan Wu, Congnan Liu, et al.",
     "venue": "NeurIPS",
     "year": 2024,
-    "links": {}
-  },
-  {
-    "title": "A lightweight dual-domain attention framework for sparse-view CT reconstruction",
-    "authors": "Chang Sun, Ken Deng, Yitong Liu, Hongwen Yang",
-    "venue": "ICCC (IEEE)",
-    "year": 2022,
-    "links": {}
-  },
-  {
-    "title": "A limited-view CT reconstruction framework based on hybrid domains and spatial correlation",
-    "authors": "Ken Deng, Chang Sun, Wuxuan Gong, Yitong Liu, Hongwen Yang",
-    "venue": "Sensors",
-    "year": 2022,
-    "links": {}
-  },
-  {
-    "title": "A lightweight structure aimed to utilize spatial correlation for sparse-view CT reconstruction",
-    "authors": "Yitong Liu, Ken Deng, Chang Sun, Hongwen Yang",
-    "venue": "arXiv",
-    "year": 2021,
-    "links": {
-      "arxiv": "https://arxiv.org/abs/2101.07613"
-    }
-  },
-  {
-    "title": "A Three-Stage Progressive Transmission Scheme for Virtual Environments Over Lossy Networks",
-    "authors": "Yitong Liu, Jingfeng Guo, Ken Deng, Yishi Liu",
-    "venue": "IEEE Access",
-    "year": 2019,
     "links": {}
   }
 ]

@@ -1,0 +1,102 @@
+[
+  {
+    "title": "SeamlessFlow: A Trainer Agent Isolation RL Framework Achieving Bubble-Free Pipelines via Tag Scheduling",
+    "authors": "Jinghui Wang, Shaojie Wang, Yinghan Cui, Xuxing Chen, Chao Wang, Xiaojiang Zhang, Minglei Zhang, Jiarong Zhang, Wenhao Zhuang, Yuchen Cao, et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2508.11553"
+    }
+  },
+  {
+    "title": "Codecriticbench: A holistic code critique benchmark for large language models",
+    "authors": "Alexander Zhang, Marcus Dong, Jiaheng Liu, Wei Zhang, Yejie Wang, Jian Yang, Ge Zhang, Tianyu Liu, Zhongyuan Peng, Yingshui Tan, et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2502.16614"
+    }
+  },
+  {
+    "title": "KAT-V1: Kwai-AutoThink Technical Report",
+    "authors": "Zizheng Zhan, Ken Deng, Huaixi Tang, Wen Xiang, Kun Wu, Weihao Li, Wenqiang Zhu, Jingxuan Xu, Lecheng Huang, Zongxian Feng, et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2507.08297"
+    }
+  },
+  {
+    "title": "Execrepobench: Multi-level executable code completion evaluation",
+    "authors": "Jian Yang, Jiajun Zhang, Jiaxi Yang, Ke Jin, Lei Zhang, Qiyao Peng, Ken Deng, Yibo Miao, Tianyu Liu, Zeyu Cui, et al.",
+    "venue": "arXiv",
+    "year": 2024,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2412.11990"
+    }
+  },
+  {
+    "title": "M2rc-eval: Massively multilingual repository-level code completion evaluation",
+    "authors": "Jiaheng Liu, Ken Deng, Congnan Liu, Jian Yang, Shukai Liu, He Zhu, Peng Zhao, Linzheng Chai, Yanan Wu, Ke Jin, et al.",
+    "venue": "arXiv",
+    "year": 2024,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2410.21157"
+    }
+  },
+  {
+    "title": "MTU-Bench: A multi-granularity tool-use benchmark for large language models",
+    "authors": "Pei Wang, Yanan Wu, Zekun Wang, Jiaheng Liu, Xiaoshuai Song, Zhongyuan Peng, Ken Deng, Chenchen Zhang, Jiakai Wang, Junran Peng, et al.",
+    "venue": "arXiv",
+    "year": 2024,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2410.11710"
+    }
+  },
+  {
+    "title": "R2c2-coder: Enhancing and benchmarking real-world repository-level code completion abilities of code large language models",
+    "authors": "Ken Deng, Jiaheng Liu, He Zhu, Congnan Liu, Jingxin Li, Jiakai Wang, Peng Zhao, Chenchen Zhang, Yanan Wu, Xueqiao Yin, et al.",
+    "venue": "arXiv",
+    "year": 2024,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2406.01359"
+    }
+  },
+  {
+    "title": "DDK: Distilling domain knowledge for efficient large language models",
+    "authors": "Jiaheng Liu, Chenchen Zhang, Jinyang Guo, Yuanxing Zhang, Haoran Que, Ken Deng, Jie Liu, Ge Zhang, Yanan Wu, Congnan Liu, et al.",
+    "venue": "NeurIPS",
+    "year": 2024,
+    "links": {}
+  },
+  {
+    "title": "A lightweight dual-domain attention framework for sparse-view CT reconstruction",
+    "authors": "Chang Sun, Ken Deng, Yitong Liu, Hongwen Yang",
+    "venue": "ICCC (IEEE)",
+    "year": 2022,
+    "links": {}
+  },
+  {
+    "title": "A limited-view CT reconstruction framework based on hybrid domains and spatial correlation",
+    "authors": "Ken Deng, Chang Sun, Wuxuan Gong, Yitong Liu, Hongwen Yang",
+    "venue": "Sensors",
+    "year": 2022,
+    "links": {}
+  },
+  {
+    "title": "A lightweight structure aimed to utilize spatial correlation for sparse-view CT reconstruction",
+    "authors": "Yitong Liu, Ken Deng, Chang Sun, Hongwen Yang",
+    "venue": "arXiv",
+    "year": 2021,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2101.07613"
+    }
+  },
+  {
+    "title": "A Three-Stage Progressive Transmission Scheme for Virtual Environments Over Lossy Networks",
+    "authors": "Yitong Liu, Jingfeng Guo, Ken Deng, Yishi Liu",
+    "venue": "IEEE Access",
+    "year": 2019,
+    "links": {}
+  }
+]

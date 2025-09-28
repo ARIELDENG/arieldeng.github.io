@@ -27,7 +27,11 @@
 
     .card{background:linear-gradient(180deg,var(--card) 0%,var(--bg2) 100%);border:1px solid var(--border);border-radius:20px;box-shadow:0 8px 30px var(--shadow)}
 
-    .profile{padding:18px;position:sticky;top:18px}
+    .profile{
+      padding:18px;
+      position: sticky;
+      top: 18px;
+    }
     .avatar{width:100%;aspect-ratio:1/1;border-radius:16px;object-fit:cover;border:1px solid var(--border);box-shadow:0 10px 40px var(--shadow)}
     .name{margin:14px 2px 2px}
     .name .en{display:block;font-weight:800;font-size:1.55rem;line-height:1.2;white-space:nowrap}
@@ -64,7 +68,24 @@
     .links a{margin-right:10px}
     .year-badge{float:right;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:2px 8px;color:var(--ink);opacity:.85;font-size:.8rem}
 
-    footer{color:var(--muted);text-align:center;padding:26px 0}
+    footer{color:var(--muted);text-align:center;padding:26px 0}==
+    
+    @media (min-width: 1200px){
+      .profile{
+        position: fixed;
+        top: 24px;
+        left: calc((100vw - var(--maxw)) / 2 + 24px); /* 与 .wrap 的左右 padding 对齐 */
+        width: 320px;         
+        z-index: 5;
+      }
+      .grid{
+        grid-template-columns: 1fr;
+      }
+      .content{
+        margin-left: calc(320px + 28px);
+      }
+    }
+
   </style>
 </head>
 <body>

@@ -19,7 +19,8 @@
     a:hover{text-decoration:underline}
     .wrap{max-width:var(--maxw);margin:0 auto;padding:20px 24px 32px}
     .topbar{display:flex;justify-content:flex-end;gap:12px;margin-bottom:14px}
-    .select{appearance:none;border:1px solid var(--border);background:var(--card);color:var(--ink);padding:6px 10px;border-radius:10px;box-shadow:0 4px 14px var(--shadow);font-size:.92rem}
+    .select, .btn{appearance:none;border:1px solid var(--border);background:var(--card);color:var(--ink);padding:6px 10px;border-radius:10px;box-shadow:0 4px 14px var(--shadow);font-size:.92rem}
+    .btn{cursor:pointer}
 
     .grid{display:grid;grid-template-columns:320px 1fr;gap:28px}
     @media (max-width:920px){.grid{grid-template-columns:1fr}}
@@ -53,10 +54,10 @@
     .edu{display:flex;flex-direction:column;gap:14px}
     .edu-item{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(180deg,var(--card) 0%,var(--bg2) 100%)}
     .edu-head{font-weight:650;margin:0 0 6px}
-    .honors{margin:6px 0 0 1.1rem;color:var(--muted);font-size:.92rem}
+    .honors{margin:6px 0 0 0;color:var(--muted);font-size:.92rem;list-style-position:inside;padding-left:0}
     .honors li{margin:2px 0}
 
-    .pub{display:flex;flex-direction:column;gap:16px}
+    .pub{display:flex;flex-direction:column;gap:16px;list-style:none;padding-left:0}
     .pub-item{padding:14px 16px;border:1px dashed var(--border);border-radius:14px;background:var(--card)}
     .pub-title{font-weight:650}
     .pub-meta{color:var(--muted);font-size:.95rem}
@@ -68,7 +69,7 @@
 </head>
 <body>
   <main class="wrap">
-    <!-- Theme selector -->
+    <!-- Controls: theme & language -->
     <div class="topbar">
       <select id="themeSel" class="select" aria-label="Theme">
         <option value="dark">Dark</option>
@@ -76,6 +77,7 @@
         <option value="dawn">Dawn</option>
         <option value="paper">Paper</option>
       </select>
+      <button id="langBtn" class="btn" aria-label="Language">EN / 中文</button>
     </div>
 
     <div class="grid">
@@ -86,17 +88,17 @@
           <span class="en">Ariel (Ken Deng)</span>
           <span class="cn">邓肯</span>
         </div>
-        <div class="title">Algorithm Expert · Kuaishou Technology</div>
+        <div class="title" data-i18n="title">Algorithm Expert · Kuaishou Technology</div>
 
         <div class="kv">
           <div class="kv-row">
-            <div class="kv-label">Email</div>
+            <div class="kv-label" data-i18n="email_label">Email</div>
             <div class="kv-value"><a href="mailto:13011807272@163.com">13011807272@163.com</a></div>
           </div>
           <div class="kv-row">
-            <div class="kv-label">Focus</div>
+            <div class="kv-label" data-i18n="focus_label">Focus</div>
             <div class="kv-value">
-              <span class="pill">LLM</span><span class="pill">AI4SE</span><span class="pill">Agentic Coding</span>
+              <span class="pill">LLM</span><span class="pill">AI4SE</span><span class="pill" data-i18n="agentic">Agentic Coding</span>
             </div>
           </div>
         </div>
@@ -111,43 +113,40 @@
       <!-- RIGHT: content -->
       <div class="content">
         <section>
-          <h2>Education</h2>
+          <h2 data-i18n="edu_h2">Education</h2>
           <div class="edu">
             <div class="edu-item">
-              <div class="edu-head"><strong>BUPT</strong> — B.E., School of Information and Communication Engineering, <em>2015–2019</em></div>
+              <div class="edu-head" data-i18n="edu_be">BUPT — B.E., School of Information and Communication Engineering (2015–2019)</div>
               <ul class="honors">
-                <li>National Scholarship</li>
-                <li>COMAP Mathematical Contest in Modeling — <em>Meritorious (M) Award</em></li>
-                <li>CCTV “Hope China” English Speech — National First Prize</li>
-                <li>BUPT Outstanding League Cadre</li>
-                <li>Triple-A Student</li>
-                <li>Culture & Sports Excellence</li>
+                <li data-i18n="hon1">National Scholarship</li>
+                <li data-i18n="hon2">COMAP MCM — <em>Meritorious (M) Award</em></li>
+                <li data-i18n="hon3">CCTV “Hope China” English Speech — National First Prize</li>
+                <li data-i18n="hon4">BUPT Outstanding League Cadre; Triple‑A Student; Culture & Sports Excellence</li>
               </ul>
             </div>
             <div class="edu-item">
-              <div class="edu-head"><strong>BUPT</strong> — M.E., School of Information and Communication Engineering, <em>2019–2022</em></div>
+              <div class="edu-head" data-i18n="edu_me">BUPT — M.E., School of Information and Communication Engineering (2019–2022)</div>
               <ul class="honors">
-                <li>BUPT “Academic Star”</li>
-                <li>Open Source Space Hackathon — <em>National 1st Place</em></li>
-                <li>BUPT Samsung Scholarship</li>
-                <li>BUPT Campus Singer Contest — <em>Runner-up</em></li>
-                <li>Outstanding Graduate Student</li>
-                <li>Outstanding Graduate</li>
+                <li data-i18n="hon5">BUPT “Academic Star”</li>
+                <li data-i18n="hon6">Open Source Space Hackathon — <em>National 1st Place</em></li>
+                <li data-i18n="hon7">BUPT Samsung Scholarship</li>
+                <li data-i18n="hon8">BUPT Campus Singer Contest — <em>Runner‑up</em></li>
+                <li data-i18n="hon9">Outstanding Graduate Student; Outstanding Graduate</li>
               </ul>
             </div>
           </div>
         </section>
 
         <section>
-          <h2>Experience</h2>
+          <h2 data-i18n="exp_h2">Experience</h2>
           <ul class="pub" style="gap:12px">
             <li class="pub-item" style="border-style:solid">
-              <div class="pub-title"><strong>Alibaba · Taotian Group, Future Lab</strong> — <em>Code Track Lead & Aone Copilot Algorithm Lead</em> (2022–2024)</div>
-              <div class="pub-meta">Led the code-intelligence direction and built an in-house <em>Code LLM</em> powering <em>Aone Copilot</em>.</div>
+              <div class="pub-title" data-i18n="exp_alibaba_title"><strong>Alibaba · Taotian Group, Future Lab</strong> — <em>Code Track Lead & Aone Copilot Algorithm Lead</em> (2022–2024)</div>
+              <div class="pub-meta" data-i18n="exp_alibaba_desc">Led the code‑intelligence direction and built an in‑house <em>Code LLM</em> powering <em>Aone Copilot</em>.</div>
             </li>
             <li class="pub-item" style="border-style:solid">
-              <div class="pub-title"><strong>Kuaishou · Kwaipilot</strong> — <em>Algorithm Expert</em> (2025–present)</div>
-              <div class="pub-meta">Core owner of <a href="https://huggingface.co/Kwaipilot/KAT-V1-40B">KAT-V1</a>, <a href="https://huggingface.co/Kwaipilot/KAT-Dev">KAT-Dev</a>, and <em>KAT-Coder</em>; advancing production-grade reasoning for developer workflows.</div>
+              <div class="pub-title" data-i18n="exp_kwai_title"><strong>Kuaishou · Kwaipilot</strong> — <em>Algorithm Expert</em> (2025–present)</div>
+              <div class="pub-meta" data-i18n="exp_kwai_desc">Core owner of <a href="https://huggingface.co/Kwaipilot/KAT-V1-40B">KAT‑V1</a>, <a href="https://huggingface.co/Kwaipilot/KAT-Dev">KAT‑Dev</a>, and <em><a href="https://mp.weixin.qq.com/s/VQQbkVa6AV1K1o8sgRArJw">KAT‑Coder</a></em>; advancing production‑grade reasoning for developer workflows.</div>
             </li>
           </ul>
         </section>
@@ -155,18 +154,16 @@
         <section>
           <h2>Publications <span class="year-badge" id="pubCount">0</span></h2>
           <div class="pub" id="pubList"></div>
-          <div class="muted" style="margin-top:8px" id="pubEmptyMsg" hidden>
-            Add a file at <code>assets/pubs.json</code> to display your publications.
-          </div>
+          <div class="muted" style="margin-top:8px" id="pubEmptyMsg" hidden data-i18n="pub_empty">Add a file at <code>assets/pubs.json</code> to display your publications.</div>
         </section>
 
         <section>
-          <h2>Contact</h2>
+          <h2 data-i18n="contact_h2">Contact</h2>
           <div class="bio">
-            <p>Interested in collaboration on LLMs for code, agentic systems, or scalable RL training? I’m happy to chat.</p>
+            <p data-i18n="contact_pitch">Interested in collaboration on LLMs for code, agentic systems, or scalable RL training? I’m happy to chat.</p>
             <p style="margin:.4rem 0 0">
-              <strong>Email</strong>: <a href="mailto:13011807272@163.com">13011807272@163.com</a><br/>
-              <strong>WeChat</strong>: <code style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:2px 6px">dkenchanted</code>
+              <strong data-i18n="email_label">Email</strong>: <a href="mailto:13011807272@163.com">13011807272@163.com</a><br/>
+              <strong data-i18n="wechat">WeChat</strong>: <code style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:2px 6px">dkenchanted</code>
             </p>
           </div>
         </section>
@@ -177,7 +174,7 @@
   </main>
 
   <script>
-    // Theme
+    // ===== Theme =====
     const themeSel = document.getElementById('themeSel');
     const savedTheme = localStorage.getItem('theme');
     if(savedTheme){ document.documentElement.setAttribute('data-theme', savedTheme); themeSel.value = savedTheme; }
@@ -185,7 +182,41 @@
       const v = themeSel.value; document.documentElement.setAttribute('data-theme', v); localStorage.setItem('theme', v);
     });
 
-    // Publications from assets/pubs.json
+    // ===== i18n =====
+    const LANG = { en: {
+      title:"Algorithm Expert · Kuaishou Technology",
+      email_label:"Email", focus_label:"Focus", agentic:"Agentic Coding",
+      edu_h2:"Education", edu_be:"BUPT — B.E., School of Information and Communication Engineering (2015–2019)", edu_me:"BUPT — M.E., School of Information and Communication Engineering (2019–2022)",
+      hon1:"National Scholarship", hon2:"COMAP MCM — Meritorious (M) Award", hon3:"CCTV \"Hope China\" English Speech — National First Prize", hon4:"BUPT Outstanding League Cadre; Triple‑A Student; Culture & Sports Excellence",
+      hon5:"BUPT \"Academic Star\"", hon6:"Open Source Space Hackathon — National 1st Place", hon7:"BUPT Samsung Scholarship", hon8:"BUPT Campus Singer Contest — Runner‑up", hon9:"Outstanding Graduate Student; Outstanding Graduate",
+      exp_h2:"Experience", exp_alibaba_title:"Alibaba · Taotian Group, Future Lab — Code Track Lead & Aone Copilot Algorithm Lead (2022–2024)", exp_alibaba_desc:"Led the code‑intelligence direction and built an in‑house Code LLM powering Aone Copilot.",
+      exp_kwai_title:"Kuaishou · Kwaipilot — Algorithm Expert (2025–present)", exp_kwai_desc:"Core owner of KAT‑V1, KAT‑Dev, and KAT‑Coder; advancing production‑grade reasoning for developer workflows.",
+      contact_h2:"Contact", contact_pitch:"Interested in collaboration on LLMs for code, agentic systems, or scalable RL training? I’m happy to chat.", wechat:"WeChat", pub_empty:"Add a file at <code>assets/pubs.json</code> to display your publications."
+    }, zh: {
+      title:"算法专家 · 快手科技",
+      email_label:"邮箱", focus_label:"方向", agentic:"智能体编码",
+      edu_h2:"教育经历", edu_be:"北京邮电大学 — 信息与通信工程 学士 (2015–2019)", edu_me:"北京邮电大学 — 信息与通信工程 硕士 (2019–2022)",
+      hon1:"国家奖学金", hon2:"美国大学生数学建模竞赛（M奖）", hon3:"CCTV“希望中国”英语风采大赛 全国一等奖", hon4:"北邮优秀团干 · 三好学生 · 文体积极分子",
+      hon5:"北邮“学术之星”", hon6:"开源空间 Hackathon 全国第一名", hon7:"北邮“三星企业奖学金”", hon8:"北邮“校园歌手大赛”亚军", hon9:"优秀研究生 · 优秀毕业生",
+      exp_h2:"工作经历", exp_alibaba_title:"阿里巴巴 · 淘天集团 · 未来实验室 — 代码方向负责人 & Aone Copilot 算法负责人 (2022–2024)", exp_alibaba_desc:"负责代码智能方向，自研并落地 Code LLM 赋能 Aone Copilot。",
+      exp_kwai_title:"快手 · Kwaipilot — 算法专家 (2025–至今)", exp_kwai_desc:"KAT‑V1、KAT‑Dev、KAT‑Coder 核心负责人，推进面向开发者生产可用的推理能力。",
+      contact_h2:"联系我", contact_pitch:"欢迎就代码大模型、智能体系统、可扩展 RL 训练等方向交流合作。", wechat:"微信", pub_empty:"请在 <code>assets/pubs.json</code> 中添加论文列表以展示。"
+    }}
+    const langBtn = document.getElementById('langBtn');
+    let cur = localStorage.getItem('lang') || 'en';
+    function applyLang(){
+      document.documentElement.lang = cur;
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const key = el.getAttribute('data-i18n');
+        const val = LANG[cur][key]; if(val!==undefined){ el.innerHTML = val; }
+      });
+      langBtn.textContent = cur==='en' ? 'EN / 中文' : '中 / EN';
+      localStorage.setItem('lang', cur);
+    }
+    langBtn.addEventListener('click',()=>{ cur = (cur==='en'?'zh':'en'); applyLang(); });
+    applyLang();
+
+    // ===== Publications from assets/pubs.json =====
     (async function(){
       try{
         const resp = await fetch('assets/pubs.json', {cache:'no-store'});
@@ -194,14 +225,14 @@
         data.sort((a,b)=> (b.year||0) - (a.year||0));
         data.forEach(p=>{
           const li = document.createElement('div'); li.className='pub-item';
-          const title = p.title || '';
-          const authors = p.authors || '';
+          const title = (cur==='zh' && p.title_zh) ? p.title_zh : p.title;
+          const authors = p.authors;
           const venue = p.venue ? `<i>${p.venue}</i>` : '';
           const year = p.year?`, ${p.year}`:'';
           const links = p.links||{};
           li.innerHTML = `
-            <div class="pub-title">${title}</div>
-            <div class="pub-meta">${authors} · ${venue}${year}</div>
+            <div class="pub-title">${title||''}</div>
+            <div class="pub-meta">${authors||''} · ${venue}${year}</div>
             <div class="links">
               ${links.pdf?`<a href="${links.pdf}">pdf</a>`:''}
               ${links.arxiv?`<a href="${links.arxiv}">arXiv</a>`:''}

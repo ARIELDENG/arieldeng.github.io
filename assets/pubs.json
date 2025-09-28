@@ -67,6 +67,8 @@
     "authors": "Jiaheng Liu, Chenchen Zhang, Jinyang Guo, Yuanxing Zhang, Haoran Que, Ken Deng, Jie Liu, Ge Zhang, Yanan Wu, Congnan Liu, et al.",
     "venue": "NeurIPS",
     "year": 2024,
-    "links": {}
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2407.16154"
+    }
   }
 ]

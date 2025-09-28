@@ -54,6 +54,12 @@
     .year-badge{float:right;background:#1a2330;border:1px solid #273346;border-radius:10px;padding:2px 8px;color:#cfe1ff;font-size:.8rem}
 
     footer{color:#8e97a3;text-align:center;padding:26px 0}
+      /* Education blocks */
+    .edu{display:flex;flex-direction:column;gap:14px}
+    .edu-item{padding:14px 16px;border:1px solid #1a1f26;border-radius:14px;background:linear-gradient(180deg,#141821 0%,#10141a 100%)}
+    .edu-head{font-weight:650;margin:0 0 6px}
+    .honors{margin:6px 0 0 1.1rem;color:var(--muted);font-size:.92rem}
+    .honors li{margin:2px 0}
   </style>
 </head>
 <body>
@@ -91,25 +97,42 @@
       <!-- RIGHT: content -->
       <div class="content">
         <section>
-          <h2>Biography</h2>
-          <div class="bio">
-            <p>
-              I build practical large language models and agentic coding systems at the intersection of <strong>LLM</strong>, <strong>AI4SE</strong>, and <strong>agentic coding</strong>. I earned both my B.E. (2019) and M.E. (2022) from the School of Information and Communication Engineering, Beijing University of Posts and Telecommunications (BUPT).
-            </p>
-            <h3 style="margin:14px 0 6px;font-size:1.05rem;color:#cfe1ff">Education</h3>
-            <ul style="margin:0 0 6px 1.1rem;">
-              <li><strong>BUPT</strong>, School of Information and Communication Engineering — <em>B.E., 2015–2019</em>.<br/>
-                  Honors: National Scholarship; COMAP Mathematical Contest in Modeling — <em>Meritorious (M) Award</em>; CCTV “Hope China” English Speech National First Prize; BUPT Outstanding League Cadre, Triple‑A Student, and Culture & Sports Excellence.</li>
-              <li><strong>BUPT</strong>, School of Information and Communication Engineering — <em>M.E., 2019–2022</em>.<br/>
-                  Honors: BUPT “Academic Star”; Open Source Space Hackathon — <em>National 1st Place</em>; BUPT Samsung Scholarship; BUPT Campus Singer Contest — <em>Runner‑up</em>; Outstanding Graduate Student; Outstanding Graduate.</li>
-            </ul>
-
-            <h3 style="margin:12px 0 6px;font-size:1.05rem;color:#cfe1ff">Experience</h3>
-            <ul style="margin:0 0 0 1.1rem;">
-              <li><strong>Alibaba · Taotian Group, Future Lab</strong> — <em>Code Track Lead & Aone Copilot Algorithm Lead (2022–2024)</em>. Led the code‑intelligence direction and built an in‑house <em>Code LLM</em> powering <em>Aone Copilot</em>.</li>
-              <li><strong>Kuaishou · Kwaipilot</strong> — <em>Algorithm Expert (2025–present)</em>. Core owner of <a href="https://huggingface.co/Kwaipilot/KAT-V1-40B">KAT‑V1</a>, <a href="https://huggingface.co/Kwaipilot/KAT-Dev">KAT‑Dev</a>, and <em>KAT‑Coder</em>; advancing production‑grade reasoning for developer workflows.</li>
-            </ul>
+          <h2>Education</h2>
+          <div class="edu">
+            <div class="edu-item">
+              <div class="edu-head"><strong>BUPT</strong> — B.E., School of Information and Communication Engineering, <em>2015–2019</em></div>
+              <ul class="honors">
+                <li>National Scholarship</li>
+                <li>COMAP Mathematical Contest in Modeling — <em>Meritorious (M) Award</em></li>
+                <li>CCTV “Hope China” English Speech — National First Prize</li>
+                <li>BUPT Outstanding League Cadre; Triple‑A Student; Culture & Sports Excellence</li>
+              </ul>
+            </div>
+            <div class="edu-item">
+              <div class="edu-head"><strong>BUPT</strong> — M.E., School of Information and Communication Engineering, <em>2019–2022</em></div>
+              <ul class="honors">
+                <li>BUPT “Academic Star”</li>
+                <li>Open Source Space Hackathon — <em>National 1st Place</em></li>
+                <li>BUPT Samsung Scholarship</li>
+                <li>BUPT Campus Singer Contest — <em>Runner‑up</em></li>
+                <li>Outstanding Graduate Student; Outstanding Graduate</li>
+              </ul>
+            </div>
           </div>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <ul class="pub" style="gap:12px">
+            <li class="pub-item" style="border-style:solid">
+              <div class="pub-title"><strong>Alibaba · Taotian Group, Future Lab</strong> — <em>Code Track Lead & Aone Copilot Algorithm Lead</em> (2022–2024)</div>
+              <div class="pub-meta">Led the code‑intelligence direction and built an in‑house <em>Code LLM</em> powering <em>Aone Copilot</em>.</div>
+            </li>
+            <li class="pub-item" style="border-style:solid">
+              <div class="pub-title"><strong>Kuaishou · Kwaipilot</strong> — <em>Algorithm Expert</em> (2025–present)</div>
+              <div class="pub-meta">Core owner of <a href="https://huggingface.co/Kwaipilot/KAT-V1-40B">KAT‑V1</a>, <a href="https://huggingface.co/Kwaipilot/KAT-Dev">KAT‑Dev</a>, and <em>KAT‑Coder</em>; advancing production‑grade reasoning for developer workflows.</div>
+            </li>
+          </ul>
         </section>
 
         <section>
